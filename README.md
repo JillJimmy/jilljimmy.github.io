@@ -1,7 +1,6 @@
-# Fresh project
+# Jill Jimmy Website Preview
 
-Your new Fresh project is ready to go. You can follow the Fresh "Getting
-Started" guide here: https://fresh.deno.dev/docs/getting-started
+The new Jill Jimmy website will be written in Deno/TSX, and Fresh. 🐸💫🐸💫✨✨
 
 ### Usage
 
