@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Mona Sans";
+    src: 
+        url("/Mona-Sans.woff2") format("woff2 supports variations"),
+        url("/Mona-Sans.woff2") format("woff2-variations");
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'InterVariable';
+    src: 
+        url(/inter/InterVariable.woff2) format("woff2 supports variations"),
+        url(/inter/InterVariable.woff2) format("woff2-variations");
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'InterVariable';
+    src: 
+        url(/inter/InterVariable-Italic.woff2) format("woff2 supports variations"),
+        url(/inter/InterVariable-Italic.woff2) format("woff2-variations");
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+    font-style: italic;
+}
+
+:root {
+    font-family: InterVariable, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+
+.mona {
+    font-family: "Mona Sans", sans-serif;
+}
+
+.font-cond {
+    font-stretch: 75%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .font-stretch-animation {
+    animation: font-stretch 5s ease-in-out infinite;
+    }
+}
+
+@keyframes font-stretch {
+    0% {
+        font-stretch: 75%;
+    }
+    50% {
+        font-stretch: 125%;
+    }
+    100% {
+        font-stretch: 75%;
+    }
+}
+
+.animation-delay-100 {
+    animation-delay: 0.1s;
+}
+
+.animation-delay-200 {
+    animation-delay: 0.2s;
+}
+
+.animation-delay-300 {
+    animation-delay: 0.3s;
+}
+
+.animation-delay-400 {
+    animation-delay: 0.4s;
+}
+
+.animation-delay-500 {
+    animation-delay: 0.5s;
+}
+
+.animation-delay-600 {
+    animation-delay: 0.6s;
+}
+
+.animation-delay-700 {
+    animation-delay: 0.7s;
+}
+
+.animation-delay-800 {
+    animation-delay: 0.8s;
+}
+
+.animation-delay-900 {
+    animation-delay: 0.9s;
+}
+
+.animation-delay-1000 {
+    animation-delay: 1s;
+}
+.animation-delay-1100 {
+    animation-delay: 1.1s;
+}
+.animation-delay-1200 {
+    animation-delay: 1.2s;
+}
+.animation-delay-1300 {
+    animation-delay: 1.3s;
+}
+.animation-delay-1400 {
+    animation-delay: 1.4s;
+}
+.animation-delay-1500 {
+    animation-delay: 1.5s;
+}
+.animation-delay-1600 {
+    animation-delay: 1.6s;
+}
+
+#jj-head {
+    animation: head-grow auto linear;
+    animation-timeline: --bg-scroll;
+    animation-range: 0% 100%;
+    background-image: url("/jj-head-graphic.svg");
+    background-size: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+
+}
+
+
+
+#scroll-timeline {
+    scroll-timeline-name: --bg-scroll;
+}
+
+@keyframes head-grow {
+    from {
+        background-size: 60%;
+    }
+    to {
+        background-size: 300%;
+    }
+}
+
+@keyframes head-grow-lg {
+    from {
+        background-size: 30%;
+    }
+    to {
+        background-size: 250%;
+    }
+}
