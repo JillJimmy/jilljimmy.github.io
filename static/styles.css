@@ -45,7 +45,7 @@
     font-stretch: 75%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media only screen and (prefers-reduced-motion: no-preference) and (min-width: 640px) {
     .font-stretch-animation {
     animation: font-stretch 5s ease-in-out infinite;
     }
@@ -62,6 +62,7 @@
         font-stretch: 75%;
     }
 }
+
 
 .animation-delay-100 {
     animation-delay: 0.1s;
@@ -147,15 +148,6 @@
         background-size: 60%;
     }
     to {
-        background-size: 300%;
-    }
-}
-
-@keyframes head-grow-lg {
-    from {
-        background-size: 30%;
-    }
-    to {
-        background-size: 250%;
+        background-size: 320%;
     }
 }
