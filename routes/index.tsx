@@ -1,6 +1,7 @@
 export default function Home() {
   return (
     <div>
+      <div class="bg-[#edf909] p-1 sticky top-0">Website under construction, bear with us 🐸🐻</div>
       <div id="jj-head">
       </div>
       <div>
