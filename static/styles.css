@@ -117,6 +117,9 @@
 .animation-delay-1500 {
     animation-delay: 1.5s;
 }
+.animation-delay-1600 {
+    animation-delay: 1.6s;
+}
 
 #jj-head {
     animation: head-grow auto linear;

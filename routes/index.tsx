@@ -11,28 +11,28 @@ export default function Home() {
               <h3 class="text-3xl font-bold">This is</h3> <br class="sr-only" />
               <h1 class="text-7xl font-black font-cond mona">
                 <span class="font-stretch-animation ">J</span>
-                <span class="font-stretch-animation animation-delay-100">
-                  i
-                </span>
                 <span class="font-stretch-animation animation-delay-200">
-                  l
-                </span>
-                <span class="font-stretch-animation animation-delay-300">
-                  l
-                </span>{" "}
-                <span class="font-stretch-animation animation-delay-400">
-                  J
-                </span>
-                <span class="font-stretch-animation animation-delay-500">
                   i
+                </span>
+                <span class="font-stretch-animation animation-delay-400">
+                  l
                 </span>
                 <span class="font-stretch-animation animation-delay-600">
-                  m
-                </span>
-                <span class="font-stretch-animation animation-delay-700">
-                  m
-                </span>
+                  l
+                </span>{" "}
                 <span class="font-stretch-animation animation-delay-800">
+                  J
+                </span>
+                <span class="font-stretch-animation animation-delay-1000">
+                  i
+                </span>
+                <span class="font-stretch-animation animation-delay-1200">
+                  m
+                </span>
+                <span class="font-stretch-animation animation-delay-1400">
+                  m
+                </span>
+                <span class="font-stretch-animation animation-delay-1600">
                   y
                 </span>
               </h1>
