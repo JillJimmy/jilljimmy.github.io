@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+body, :root, div {
+    scrollbar-color: #2eff3f #161616;
+    font-feature-settings: 'dlig' 1, 'frac' on, 'ccmp' on, 'ss02' on, 'ss03' on, 'cv11' on;
+}
+
+@-moz-document url-prefix() {
+    body {
+        background: #2eff3f !important;
+    }
+}
+
+body {
+    background: #2eff3f
+}
+
+@media only screen and (max-width: 670px) {
+    body {
+        background: #2eff3f !important;
+    }
+}
+
+@supports (animation-timeline: none) {
+    body {
+        background: none;
+    }
+}
+
 @font-face {
     font-family: "Mona Sans";
     src: 
