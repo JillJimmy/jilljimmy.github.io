@@ -2,26 +2,30 @@ import { Head } from "$fresh/runtime.ts";
 
 export default function Error404() {
   return (
-    <>
+    <div class="p-3">
       <Head>
-        <title>404 - Page not found</title>
+        <title>🥴 404</title>
       </Head>
-      <div class="px-4 py-8 mx-auto bg-[#86efac]">
-        <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
-          <img
-            class="my-6"
-            src="/logo.svg"
-            width="128"
-            height="128"
-            alt="the Fresh logo: a sliced lemon dripping with juice"
-          />
-          <h1 class="text-4xl font-bold">404 - Page not found</h1>
-          <p class="my-4">
-            The page you were looking for doesn't exist.
-          </p>
-          <a href="/" class="underline">Go back home</a>
+      <div class="mockup-browser bg-base-200">
+        <div class="mockup-browser-toolbar">
+          <div class="input !bg-base-300 font-mono">jill-jimmy.com</div>
+        </div>
+        <div class="m-3 p-3 text-center rounded-md bg-primary">
+          <h1 class="text-6xl font-cond mona font-black">
+            I'm sorry, <i>what?</i>
+          </h1>
+          <br />
+          <code class="font-semibold text-sm">
+            We have no idea what the heck you just put in that address bar. Why
+            don't you just completely disregard this stupid 404 page and get
+            back to what you were doing?
+          </code>
+          <br />
+          <br />
+          <a href="/" class="btn btn-block btn-secondary rounded-full no-animation">Go home</a>
         </div>
       </div>
-    </>
+      
+    </div>
   );
 }

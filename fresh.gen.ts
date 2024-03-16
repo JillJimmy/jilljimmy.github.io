@@ -6,7 +6,7 @@ import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
 import * as $index from "./routes/index.tsx";
-
+import * as $CanOfDestiny from "./islands/CanOfDestiny.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -16,7 +16,9 @@ const manifest = {
     "./routes/api/joke.ts": $api_joke,
     "./routes/index.tsx": $index,
   },
-  islands: {},
+  islands: {
+    "./islands/CanOfDestiny.tsx": $CanOfDestiny,
+  },
   baseUrl: import.meta.url,
 } satisfies Manifest;
 

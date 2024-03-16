@@ -4,7 +4,7 @@
 
 body, :root, div {
     scrollbar-color: #2eff3f #161616;
-    font-feature-settings: 'dlig' 1, 'frac' on, 'ccmp' on, 'ss02' on, 'ss03' on, 'cv11' on;
+    font-feature-settings: 'dlig' 1, 'ccmp' on, 'ss02' on, 'ss03' on, 'cv11' on;
 }
 
 @-moz-document url-prefix() {
@@ -29,6 +29,11 @@ body {
     }
 }
 
+::selection {
+    background-color: black;
+    color: #2eff3f;
+}
+
 @font-face {
     font-family: "Mona Sans";
     src: 
@@ -37,6 +42,24 @@ body {
     font-weight: 200 900;
     font-stretch: 75% 125%;
     font-style: normal;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src:   
+        url("/jetbrains-mono/JetBrainsMono[wght].ttf") format(woff2 supports variations),
+        url("/jetbrains-mono/JetBrainsMono[wght].ttf") format(woff2-variations);
+    font-weight: 100 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src:   
+        url("/jetbrains-mono/JetBrainsMono-Italic[wght].ttf") format(woff2 supports variations),
+        url("/jetbrains-mono/JetBrainsMono-Italic[wght].ttf") format(woff2-variations);
+    font-weight: 100 800;
+    font-style: italic;
 }
 
 @font-face {
@@ -76,6 +99,10 @@ body {
     .font-stretch-animation {
     animation: font-stretch 5s ease-in-out infinite;
     }
+}
+
+code, kbd, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
 }
 
 @keyframes font-stretch {
@@ -176,5 +203,18 @@ body {
     }
     to {
         background-size: 320%;
+    }
+}
+
+.marquee {
+    animation: marquee 5s infinite linear;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
     }
 }
