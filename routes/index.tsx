@@ -43,11 +43,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div class="navbar z-10 bg-secondary sticky top-0">
-          <a class="btn btn-square btn-ghost p-2">
-            <img src="logo.svg" />
-          </a>
-        </div>
+        {
+          //Navbar used to be here. 
+        }
       </div>
       <div>
         <br class="sr-only" />
@@ -122,12 +120,18 @@ export default function Home() {
           undisclosed energy source.
         </p>
       </div>
+      <div class="danger w-full h-6"></div>
       <footer class="footer p-10 bg-base-200 text-base-content">
         <aside class="self-center justify-center md:self-start md:w-auto w-full">
           <img src="/jjlogo-duotone.svg" width="60" />
         </aside>
         <nav class="grid-flow-col gap-4 z-10 md:place-self-center md:justify-self-end">
+          
+          <a class="align-middle md:visible invisible text-end">This website is a work in progress.<br />Please bear with us ✨🐻‍❄️</a>
           <a>
+        <a class="btn btn-ghost btn-circle" href="https://github.com/JillJimmy"><img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" /></a>
+        <a class="btn btn-primary " href="https://github.com/JillJimmy/web">View page source</a>
+        <a>
             <svg
               xmlns:dc="http://purl.org/dc/elements/1.1/"
               xmlns:cc="http://web.resource.org/cc/"
@@ -334,10 +338,6 @@ export default function Home() {
               </g>
             </svg>
           </a>
-          <a class="align-middle md:visible invisible">This website is a work in progress.<br />Please bear with us ✨🐻‍❄️</a>
-          <a>
-        <a class="btn btn-ghost btn-circle" href="https://github.com/JillJimmy"><img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" /></a>
-        <a class="btn btn-primary " href="https://github.com/JillJimmy/web">View page source</a>
         </a>
         </nav>
         
