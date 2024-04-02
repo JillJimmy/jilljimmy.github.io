@@ -1,0 +1,11 @@
+@media (max-width: 700px) {
+    body {
+        background-color: #2eff3f;
+    }
+}
+
+@-moz-document {
+    body {
+        background-color: #2eff3f;
+    }
+}

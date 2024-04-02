@@ -1,27 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght,BNCE,INFM,SPAC@0,300..800,-100..100,0..100,0..100;1,300..800,-100..100,0..100,0..100&display=swap');
 
 body, :root, div {
     scrollbar-color: #2eff3f #161616;
     font-feature-settings: 'dlig' 1, 'ccmp' on, 'ss02' on, 'ss03' on, 'cv11' on;
 }
 
-@-moz-document url-prefix() {
-    body {
-        background: #2eff3f !important;
-    }
-}
 
-body {
-    background: #2eff3f
-}
-
-@media only screen and (max-width: 670px) {
-    body {
-        background: #2eff3f !important;
-    }
-}
 
 @supports (animation-timeline: none) {
     body {
@@ -82,14 +69,32 @@ body {
     font-style: italic;
 }
 
+.cod-lettering {
+    @apply text-center mx-auto w-auto justify-self-center md:-my-96 object-center drop-shadow-lg -my-32 z-20 relative h-1/2;
+}
+
 :root {
     font-family: InterVariable, sans-serif;
     font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 
 .mona {
+    /* Test to see if Brocolage Grotesque will look better */
     font-family: "Mona Sans", sans-serif;
 }
+
+.comic-block {
+    background-color: #edf909;
+    border: 3pt solid black;
+    color: black;
+    
+    font-variation-settings: "INFM" 100;
+    box-shadow: 7.0px 7.5px 0px black;
+    font-family: "Shantell Sans", cursive;
+    font-style: italic;
+    padding: 2.5pt;
+    text-transform: uppercase;
+} 
 
 .font-cond {
     font-stretch: 75%;
