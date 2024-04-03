@@ -9,3 +9,9 @@
         background-color: #2eff3f;
     }
 }
+
+@supports (animation-timeline: none) {
+    body {
+        background: none;
+    }
+}

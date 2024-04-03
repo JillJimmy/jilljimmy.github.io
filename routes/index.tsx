@@ -120,7 +120,7 @@ export default function Home() {
           undisclosed energy source.
         </p>
       </div>
-      <div class="danger w-full h-6"></div>
+      <div class="danger w-full h-6 -my-4 z-10"></div>
       <footer class="footer p-10 bg-base-200 text-base-content">
         <aside class="self-center justify-center md:self-start md:w-auto w-full">
           <img src="/jjlogo-duotone.svg" width="60" />
@@ -130,7 +130,7 @@ export default function Home() {
           <a class="align-middle md:visible invisible text-end">This website is a work in progress.<br />Please bear with us ✨🐻‍❄️</a>
           <a>
         <a class="btn btn-ghost btn-circle" href="https://github.com/JillJimmy"><img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" /></a>
-        <a class="btn btn-primary " href="https://github.com/JillJimmy/web">View page source</a>
+        <a class="btn btn-primary " href="https://github.com/JillJimmy/web">View source</a>
         <a>
             <svg
               xmlns:dc="http://purl.org/dc/elements/1.1/"
