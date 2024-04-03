@@ -1,12 +1,15 @@
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
     body {
-        background-color: #2eff3f;
+      background-color: #2eff3f !important;
     }
+  }
+body {
+    overflow-x: hidden;
 }
 
-@-moz-document {
+@-moz-document url-prefix() {
     body {
-        background-color: #2eff3f;
+        background-color: #2eff3f !important;
     }
 }
 

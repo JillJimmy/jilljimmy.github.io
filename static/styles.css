@@ -289,6 +289,7 @@ code, kbd, .font-mono {
 @keyframes head-grow {
     0% {
         background-size: 60%;
+        opacity: 1;
     }
     25% {
         background-size: 320%;
@@ -343,5 +344,21 @@ transform: rotate(0.5deg);
     color: #ff78fa;
 }
 
+.wavy {
+    --mask:
+      radial-gradient(47.17px at 50% 65px,#000 99%,#0000 101%) calc(50% - 50px) 0/100px 51% repeat-x,
+      radial-gradient(47.17px at 50% -40px,#0000 99%,#000 101%) 50% 25px/100px calc(51% - 25px) repeat-x,
+      radial-gradient(47.17px at 50% calc(100% - 65px),#000 99%,#0000 101%) calc(50% - 50px) 100%/100px 51% repeat-x,
+      radial-gradient(47.17px at 50% calc(100% + 40px),#0000 99%,#000 101%) 50% calc(100% - 25px)/100px calc(51% - 25px) repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+            mask-repeat: repeat-x;
+  }
+    
 
-  
+.terminal-frame {
+    border-top-right-radius: 25pt;
+    border-bottom-right-radius: 6pt;
+    border-top-left-radius: 6pt;
+    border-bottom-left-radius: 25pt;
+}
