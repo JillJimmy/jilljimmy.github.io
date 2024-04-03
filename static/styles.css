@@ -231,6 +231,12 @@ animation: danger 2.5s infinite linear;
 transform: rotate(0.5deg);
 }
 
+@media (prefers-reduced-motion) {
+    .danger {
+        animation: none !important;
+    }
+}
+
 @keyframes danger {
     from {
         background-position: 0 0;
@@ -239,3 +245,15 @@ transform: rotate(0.5deg);
         background-position: 56.57px 0;
     }
 }
+
+.purple-hero {
+    @apply hero w-full min-h-screen bg-[#ff78fa];
+}
+
+.purple-hero-content::selection {
+    background-color: #000000;
+    color: #ff78fa;
+}
+
+
+  
