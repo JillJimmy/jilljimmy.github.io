@@ -1,6 +1,8 @@
-# Jill Jimmy Website Preview
+<img src="https://raw.githubusercontent.com/JillJimmy/web/3156b36ad7d9f8c5ab9490e3a8f6d0ceee4a8b5a/static/logo.svg" alt="Jill Jimmy" width="200"/>
 
-The new Jill Jimmy website will be written in Deno/TSX, and Fresh. 🐸💫🐸💫✨✨
+# Jill Jimmy Website 
+
+The new Jill Jimmy website is being written in Deno/TSX, and Fresh. 🐸💫🐸💫✨✨
 
 ### Usage
 
