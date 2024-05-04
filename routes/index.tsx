@@ -6,7 +6,7 @@ export default function Home() {
         <link rel="stylesheet" href="/home.css" />
       </Head>
       <div>
-        <div class="bg-accent text-base-100 p-2 mona fixed z-99 w-full">Please remember that iOS devices/Safari users may have issues, we are looking to this problem and will fix it soon 👍</div>
+        <div class="notice">Please remember that iOS devices/Safari users may have issues, we are looking to this problem and will fix it soon 👍</div>
         <div id="jj-head">
         </div>
         <div class="hero min-h-screen bg-none z-10">
@@ -135,10 +135,10 @@ export default function Home() {
         </div>
       </div>
       <div class="wavy bg-black min-h-screen text-primary -my-10 p-6 pt-16 pb-16">
-        <div class="w-full min-h-full grid grid-rows-2 grid-cols-1 md:grid-rows-1 gap-2 md:grid-cols-2 ">
+        <div class="w-full glow min-h-full grid grid-rows-2 grid-cols-1 md:grid-rows-1 gap-2 md:grid-cols-2 ">
           <div class="terminal-frame card border-2 border-primary min-h-full">
             <figure>
-              <img src="moBot.svg" alt="A computer named moBot with a terminal open and a smiley face. He has rocket thrusters." />
+              <img src="moBot.svg" class="w-96 p-3 glow" alt="A computer named moBot with a terminal open and a smiley face. He has rocket thrusters." />
             </figure>
             <div class="card-body">
               <h2 class="text-6xl card-title mona font-black">moBot</h2>

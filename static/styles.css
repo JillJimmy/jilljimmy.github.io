@@ -7,6 +7,12 @@ body, :root, div {
     font-feature-settings: 'dlig' 1, 'ccmp' on, 'ss02' on, 'ss03' on, 'cv11' on;
 }
 
+.notice {
+    @apply bg-accent text-base-100 p-2 mona fixed w-full;
+    z-index: 1000;
+    font-size: small;
+}
+
 /* cyrillic-ext */
 @font-face {
     font-family: 'Shantell Sans';
@@ -172,7 +178,6 @@ body, :root, div {
     border: 3pt solid black;
     color: black;
     
-    font-variation-settings: "INFM" 100;
     box-shadow: 7.0px 7.5px 0px black;
     font-family: "Shantell Sans", cursive;
     font-style: italic;
@@ -192,6 +197,10 @@ body, :root, div {
 
 code, kbd, .font-mono {
     font-family: 'JetBrains Mono', monospace;
+}
+
+.glow {
+    filter: drop-shadow(0px 0px 3pt #2eff3f50)
 }
 
 @keyframes font-stretch {
