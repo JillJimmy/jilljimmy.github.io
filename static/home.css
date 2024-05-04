@@ -7,7 +7,7 @@ body {
     overflow-x: hidden;
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix(),  {
     body {
         background-color: #2eff3f !important;
     }
