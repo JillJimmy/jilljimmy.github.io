@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.bannerImage {
+    background-image: url(/homeBanner.svg);
+    @apply min-w-full min-h-full bg-cover bg-center;
+}
+
 body, :root, div {
     scrollbar-color: #2eff3f #161616;
     font-feature-settings: 'dlig' 1, 'ccmp' on, 'ss02' on, 'ss03' on, 'cv11' on;
