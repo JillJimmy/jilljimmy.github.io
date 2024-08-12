@@ -11,7 +11,7 @@ export default function App({ Component }: PageProps) {
         <link rel="stylesheet" href="/styles.css" />
         
       </head>
-      <body>
+      <body class="overflow-hidden">
         <Component />
       </body>
     </html>
