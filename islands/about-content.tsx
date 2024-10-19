@@ -100,13 +100,8 @@ export default function IndexContent() {
                                 </p>
                             </div>
                             <figure>
-                                <div
-                                    class="artboard artboard-horizontal phone-2 text-center"
-                                    alt=""
-                                >
-                                    We're... still working on a pic for this
-                                    one.{" "}
-                                    <span class="text-opacity-50">Sorry.</span>
+                                <div>
+                                    <img src="/bagel.svg" class="w-72 p-7 glow" />
                                 </div>
                             </figure>
                         </div>

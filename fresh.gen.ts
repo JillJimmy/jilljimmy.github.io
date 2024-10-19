@@ -10,7 +10,7 @@ import * as $index from "./routes/index.tsx";
 import * as $CanOfDestiny from "./islands/CanOfDestiny.tsx";
 import * as $about_content from "./islands/about-content.tsx";
 import * as $index_content from "./islands/index-content.tsx";
-import { type Manifest } from "$fresh/server.ts";
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
